@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rDy-cR-rVz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Table View Controller-->
+        <scene sceneID="bVp-C8-jjO">
+            <objects>
+                <tableViewController id="hfx-2I-O1T" customClass="AudioTableViewController" customModule="SpeechSensor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="30" sectionFooterHeight="18" id="xnZ-5T-cgc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Automated Voice" id="jZG-tL-8mf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="OPx-2i-drk">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OPx-2i-drk" id="H99-7B-gp8">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio 1 - Computer recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCQ-lk-XaQ">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eCQ-lk-XaQ" firstAttribute="centerY" secondItem="H99-7B-gp8" secondAttribute="centerY" id="59O-YA-xzi"/>
+                                                <constraint firstItem="eCQ-lk-XaQ" firstAttribute="leading" secondItem="H99-7B-gp8" secondAttribute="leadingMargin" constant="35" id="IW4-sS-nd6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="audio1" id="7ga-3k-u2z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="V61-xK-O2S">
+                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V61-xK-O2S" id="J7f-Be-enz">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio 2 - Computer recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQU-HR-xsq">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iQU-HR-xsq" firstAttribute="leading" secondItem="J7f-Be-enz" secondAttribute="leadingMargin" constant="35" id="Uji-xk-hZy"/>
+                                                <constraint firstItem="iQU-HR-xsq" firstAttribute="centerY" secondItem="J7f-Be-enz" secondAttribute="centerY" id="wV6-tj-0KC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="audio2" id="V4D-8U-lLh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="ORY-rM-a9p">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ORY-rM-a9p" id="kJq-8b-QK4">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio 3 - Computer recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc8-MS-XZY">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fc8-MS-XZY" firstAttribute="leading" secondItem="kJq-8b-QK4" secondAttribute="leadingMargin" constant="35" id="aQ9-Yp-SGe"/>
+                                                <constraint firstItem="fc8-MS-XZY" firstAttribute="centerY" secondItem="kJq-8b-QK4" secondAttribute="centerY" id="dz5-Pp-SYn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="audio3" id="yHB-xL-dw9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="WAV files" id="mec-5v-Ntr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="2uL-Gf-PkB">
+                                        <rect key="frame" x="0.0" y="357" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uL-Gf-PkB" id="M6f-9I-Jmm">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAV 1 - Phone recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs5-Pf-HzP">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hs5-Pf-HzP" firstAttribute="centerY" secondItem="M6f-9I-Jmm" secondAttribute="centerY" id="Ign-i1-qn6"/>
+                                                <constraint firstItem="hs5-Pf-HzP" firstAttribute="leading" secondItem="M6f-9I-Jmm" secondAttribute="leadingMargin" constant="35" id="i1A-8l-kGq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="wav1" id="ntb-OW-eIL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="YTX-TW-Q8L">
+                                        <rect key="frame" x="0.0" y="417" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTX-TW-Q8L" id="wlK-9y-cvD">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAV 2 - Phone recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iU-bs-gyO">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8iU-bs-gyO" firstAttribute="centerY" secondItem="wlK-9y-cvD" secondAttribute="centerY" id="Qo2-IC-ZDg"/>
+                                                <constraint firstItem="8iU-bs-gyO" firstAttribute="leading" secondItem="wlK-9y-cvD" secondAttribute="leadingMargin" constant="35" id="xR7-L1-O1R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="wav2" id="p98-uv-pMQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="60" id="49D-L2-m8q">
+                                        <rect key="frame" x="0.0" y="477" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="49D-L2-m8q" id="69g-ZI-ynX">
+                                            <frame key="frameInset" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAV 3 - Phone recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gd-xb-5Ja">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7gd-xb-5Ja" firstAttribute="centerY" secondItem="69g-ZI-ynX" secondAttribute="centerY" id="drs-57-9Bj"/>
+                                                <constraint firstItem="7gd-xb-5Ja" firstAttribute="leading" secondItem="69g-ZI-ynX" secondAttribute="leadingMargin" constant="35" id="naX-HG-kbx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G8s-zV-9h4" kind="push" identifier="wav3" id="pLK-ZT-5JC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hfx-2I-O1T" id="Ehu-BD-Ng6"/>
+                            <outlet property="delegate" destination="hfx-2I-O1T" id="Zhq-65-4Ae"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="V7R-iE-qBz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVB-4F-QO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="790"/>
+        </scene>
+        <!--Transcript View Controller-->
+        <scene sceneID="Yos-VB-C7A">
+            <objects>
+                <viewController id="G8s-zV-9h4" customClass="TranscriptViewController" customModule="SpeechSensor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="baR-7B-SNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVa-XE-qKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0pE-1E-vtz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-1M-Ppi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Afh-zG-sV4"/>
+                                    <constraint firstAttribute="width" constant="125" id="z9G-Qw-Vb0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="start:" destination="G8s-zV-9h4" eventType="touchUpInside" id="zn3-cn-RNU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your text will show here.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZdL-2m-1dG">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUn-rP-DV7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C7Q-Nb-5ZO"/>
+                                    <constraint firstAttribute="width" constant="102" id="c8W-Lt-tsK"/>
+                                </constraints>
+                                <state key="normal" title="Play Audio"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="G8s-zV-9h4" eventType="touchUpInside" id="j3c-20-2oL"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Urx-Q3-YRa">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeH-lL-OQa">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="133" id="DBd-h9-hRz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eeH-lL-OQa" firstAttribute="leading" secondItem="Urx-Q3-YRa" secondAttribute="leading" id="EWr-dg-LXQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="eeH-lL-OQa" secondAttribute="trailing" id="bkl-FY-yBf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ptg-1M-Ppi" firstAttribute="centerX" secondItem="0pE-1E-vtz" secondAttribute="centerX" id="1n4-QR-71d"/>
+                            <constraint firstItem="ptg-1M-Ppi" firstAttribute="top" secondItem="ZdL-2m-1dG" secondAttribute="bottom" constant="149" id="2Sg-yZ-kd7"/>
+                            <constraint firstItem="OVa-XE-qKi" firstAttribute="top" secondItem="MUn-rP-DV7" secondAttribute="bottom" constant="20" id="9Ub-dZ-KVc"/>
+                            <constraint firstItem="MUn-rP-DV7" firstAttribute="centerX" secondItem="0pE-1E-vtz" secondAttribute="centerX" id="J5u-Qm-6xg"/>
+                            <constraint firstItem="Urx-Q3-YRa" firstAttribute="leading" secondItem="ZdL-2m-1dG" secondAttribute="leading" id="LGE-ts-89H"/>
+                            <constraint firstItem="ZdL-2m-1dG" firstAttribute="trailing" secondItem="0pE-1E-vtz" secondAttribute="trailingMargin" id="TQ2-JJ-V27"/>
+                            <constraint firstItem="ZdL-2m-1dG" firstAttribute="leading" secondItem="0pE-1E-vtz" secondAttribute="leadingMargin" id="YBC-h2-A1y"/>
+                            <constraint firstItem="ZdL-2m-1dG" firstAttribute="top" secondItem="baR-7B-SNR" secondAttribute="bottom" constant="8" id="k5T-s5-qgi"/>
+                            <constraint firstItem="Urx-Q3-YRa" firstAttribute="top" secondItem="ZdL-2m-1dG" secondAttribute="bottom" constant="8" symbolic="YES" id="mO4-Zd-QMb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Urx-Q3-YRa" secondAttribute="trailing" id="pvW-IZ-9wQ"/>
+                            <constraint firstItem="OVa-XE-qKi" firstAttribute="top" secondItem="ptg-1M-Ppi" secondAttribute="bottom" constant="20" id="tl0-w5-x2g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="n81-VN-nUM"/>
+                    <connections>
+                        <outlet property="playButton" destination="MUn-rP-DV7" id="bre-Ze-D9r"/>
+                        <outlet property="startButton" destination="ptg-1M-Ppi" id="tUr-ms-diS"/>
+                        <outlet property="statusLabel" destination="eeH-lL-OQa" id="sAY-WK-Igv"/>
+                        <outlet property="textView" destination="ZdL-2m-1dG" id="Jh6-Hc-53M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvG-Da-3Y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917.5999999999999" y="788.45577211394311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hDE-f8-wMJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDy-cR-rVz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gIV-lE-1uD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0dt-zH-WmF">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="hfx-2I-O1T" kind="relationship" relationship="rootViewController" id="cnJ-UQ-L0M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9f-V9-TrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pLK-ZT-5JC"/>
+    </inferredMetricsTieBreakers>
+</document>
